@@ -19,8 +19,17 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-invite-title {
+  font-family: var(--font-title);
+  letter-spacing: 0.06em;
+}
+
+.font-invite-body {
+  font-family: var(--font-body);
+}
+
+.font-invite-note {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  opacity: 0.85;
 }
