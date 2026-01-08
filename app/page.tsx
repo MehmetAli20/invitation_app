@@ -67,7 +67,18 @@ export default function HomePage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-[#f6f2eb] px-4">
       {/* ZARF */}
-      <div className="relative w-[420px] h-[300px] max-w-[92vw] perspective-[1200px]">
+      <div
+        className="
+          relative
+          w-[420px] h-[300px]
+          max-w-[92vw]
+          perspective-[1200px]
+          scale-[0.88]
+          sm:scale-100
+          origin-top
+        "
+      >
+
 
         {/* DAVETİYE KAĞIDI */}
         <AnimatePresence>
