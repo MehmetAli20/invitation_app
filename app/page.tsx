@@ -173,16 +173,21 @@ export default function HomePage() {
 
         {/* ZARF KAPAĞI */}
         <motion.div
-          className="absolute top-0 left-0 w-0 h-0 
-            border-l-[210px] border-r-[210px] border-t-[140px]
+          className="absolute top-0 left-0 w-0 h-0
+            border-l-[180px] border-r-[180px] border-t-[120px]
+            sm:border-l-[210px] sm:border-r-[210px] sm:border-t-[140px]
             border-l-transparent border-r-transparent border-t-[#ede7dc]
-            origin-top z-30"
+            origin-top-center z-30"
           animate={{
             rotateX:
               stage === "envelopeOpen" || stage === "cardOut" ? -180 : 0,
           }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          style={{ transformStyle: "preserve-3d" }}
+          style={{
+            transformStyle: "preserve-3d",
+            backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
+          }}
         />
 
         {/* MÜHÜR */}
